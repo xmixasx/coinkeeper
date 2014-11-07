@@ -1,0 +1,2 @@
+include ':coin-api', ':coin-android'
+rootProject.name='coinkeeper'
