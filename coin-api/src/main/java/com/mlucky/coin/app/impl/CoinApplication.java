@@ -87,5 +87,19 @@ public class CoinApplication {
         from.addTransaction(to, sMoney);
     }
 
+    public List<InCome> getInComeSources() {
+        return inComeSources;
+    }
 
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
+    public List<Spend> getSpends() {
+        return spends;
+    }
+
+    public List<Goal> getGoals() {
+        return goals;
+    }
 }

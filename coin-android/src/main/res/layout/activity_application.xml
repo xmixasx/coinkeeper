@@ -7,22 +7,28 @@
         <HorizontalScrollView
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-
                 android:layout_weight="1"
                 android:background="@android:color/holo_red_dark"
                 >
             <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/income_linear_layout">
-                    <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="add"
-                            android:layout_gravity="center"
-                            android:id="@+id/incomeadd_button"
-                            android:onClick="inComeAddButtonClick"/>
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/income_linear_layout">
+                <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="add"
+                                android:layout_gravity="center"
+                                android:id="@+id/incomeadd_button"
+                                android:onClick="inComeAddButtonClick"/>
+                    </LinearLayout>
             </LinearLayout>
         </HorizontalScrollView>
     <HorizontalScrollView
@@ -33,8 +39,16 @@
             >
         <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/account_linear_layout">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="add"
+                    android:layout_gravity="center"
+                    android:id="@+id/accountadd_button"
+                    android:onClick="inAccountAddButtonClick"/>
 
         </LinearLayout>
     </HorizontalScrollView>
@@ -46,7 +60,7 @@
             >
         <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
         </LinearLayout>
@@ -59,7 +73,7 @@
             >
         <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
         </LinearLayout>
