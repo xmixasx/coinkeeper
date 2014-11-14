@@ -75,15 +75,18 @@ public class CoinApplication {
         this.goals.add(goal);
         return goal;
     }
-    public void addAccountTransaction(InCome from, Account to, String sMoney) {
+    public void addTransaction(InCome from, Account to, String sMoney) {
         from.addTransaction(to, sMoney);
     }
 
-    public void addGoalTransaction(InCome from, Goal to,  String sMoney) {
+    public void addTransaction(Account from, Goal to,  String sMoney) {
         from.addTransaction(to, sMoney);
     }
 
-    public void addSpendTransaction(Account from, Spend to, String sMoney) {
+    public void addTransaction(Account from, Spend to, String sMoney) {
+        from.addTransaction(to, sMoney);
+    }
+    public void addTransaction(MoneyFlow from, MoneyFlow to, String sMoney) {
         from.addTransaction(to, sMoney);
     }
 

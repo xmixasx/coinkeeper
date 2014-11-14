@@ -37,11 +37,18 @@
             android:layout_weight="1"
             android:background="@android:color/holo_green_dark"
             >
+
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/account_linear_layout">
+        <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,7 +56,7 @@
                     android:layout_gravity="center"
                     android:id="@+id/accountadd_button"
                     android:onClick="inAccountAddButtonClick"/>
-
+            </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
     <HorizontalScrollView
@@ -61,8 +68,22 @@
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
+                android:layout_height="match_parent"
+                android:id="@+id/spend_linear_layout">
+            <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="add"
+                        android:layout_gravity="center"
+                        android:id="@+id/spendadd_button"
+                        android:onClick="spendAddButtonClick"/>
+            </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
     <HorizontalScrollView
@@ -74,8 +95,22 @@
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
+                android:layout_height="match_parent"
+                android:id="@+id/goal_linear_layout">
+            <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="add"
+                        android:layout_gravity="center"
+                        android:id="@+id/goaladd_button"
+                        android:onClick="goalAddButtonClick"/>
+            </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
 

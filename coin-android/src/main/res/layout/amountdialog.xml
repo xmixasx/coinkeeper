@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/keypad"
+
+        android:orientation="vertical"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:stretchColumns="*">
+
+
+
+<TextView android:id="@+id/keypad_output"
+
+        android:textSize="20dip"
+
+        android:paddingTop="10dip"
+
+        android:paddingLeft="2dip"
+
+        android:paddingRight="2dip" />
+
+<TableRow>
+
+<Button android:id="@+id/keypad_1"
+
+android:text="1"/>
+
+<Button android:id="@+id/keypad_2"
+
+android:text="2"/>
+
+<Button android:id="@+id/keypad_3"
+
+android:text="3"/>
+
+</TableRow>
+
+<TableRow>
+    <Button android:id="@+id/keypad_4"
+
+         android:text="4" />
+
+    <Button android:id="@+id/keypad_5"
+
+        android:text="5" />
+
+    <Button android:id="@+id/keypad_6"
+
+        android:text="6" />
+
+</TableRow>
+
+<TableRow>
+
+    <Button android:id="@+id/keypad_7"
+
+        android:text="7" />
+
+    <Button android:id="@+id/keypad_8"
+
+        android:text="8" />
+    <Button android:id="@+id/keypad_9"
+
+        android:text="9" />
+
+</TableRow>
+
+<TableRow>
+
+<Button android:id="@+id/keypad_decimal"
+
+android:text="." />
+
+<Button android:id="@+id/keypad_0"
+
+android:text="0" />
+
+<Button android:id="@+id/keypad_EE"
+
+android:text="EE" />
+
+</TableRow>
+
+<TableRow>
+
+<Button android:id="@+id/keypad_plus"
+
+android:text="+" />
+
+<Button android:id="@+id/keypad_minus"
+
+android:text="-" />
+
+<Button android:id="@+id/keypad_backspace"
+
+android:text="←" />
+
+</TableRow>
+
+<RelativeLayout android:orientation="horizontal"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content">
+
+
+
+<Button android:id="@+id/keypad_submit"
+
+        android:text="Submit"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"/>
+
+
+
+<Button android:id="@+id/keypad_cancel"
+
+        android:text="Cancel"
+
+        android:layout_toLeftOf="@id/keypad_submit"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"/>
+
+
+
+<Button android:id="@+id/keypad_clear"
+
+        android:text="Clear"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+
+
+        </TableLayout>
